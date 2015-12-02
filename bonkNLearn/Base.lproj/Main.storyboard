@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Age View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bonkNLearn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AgeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,40 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZM-oL-qYS">
-                                <rect key="frame" x="279" y="125" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Toddler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4m-7F-A3E">
-                                <rect key="frame" x="270" y="225" width="60" height="69"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preschool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mta-Pl-Olh">
-                                <rect key="frame" x="262" y="360" width="77" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVp-fC-r7Z">
-                                <rect key="frame" x="279" y="269" width="46" height="30"/>
+                                <rect key="frame" x="26" y="172" width="534" height="126"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="1Pl-wR-Zpq" kind="show" identifier="toddToActivities" id="YaS-KL-GVC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6p4-IT-2g8">
-                                <rect key="frame" x="277" y="398" width="46" height="30"/>
+                                <rect key="frame" x="31" y="306" width="529" height="122"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="diB-ul-u0o" kind="show" identifier="preToActivities" id="w9W-i9-2i3"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn AGES.png" translatesAutoresizingMaskIntoConstraints="NO" id="iSV-SD-Qgb">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="iSV-SD-Qgb" secondAttribute="trailing" constant="120" id="6o2-mO-ZLU"/>
+                            <constraint firstItem="iSV-SD-Qgb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="7qe-9X-pMZ"/>
+                            <constraint firstItem="iSV-SD-Qgb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="120" id="EbV-fi-eEM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iSV-SD-Qgb" secondAttribute="bottom" id="hDi-gH-JbM"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="r6J-yz-w87"/>
                 </viewController>
@@ -70,21 +62,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApT-zb-L0n">
-                                <rect key="frame" x="230" y="87" width="70" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7R-0B-nHB">
-                                <rect key="frame" x="245" y="246" width="46" height="30"/>
+                                <rect key="frame" x="0.0" y="305" width="593" height="101"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="noe-Y3-Htb" kind="show" identifier="actToNumbers" id="wDt-9G-iDR"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn TODDLER.png" translatesAutoresizingMaskIntoConstraints="NO" id="fxv-Hj-zgJ">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fxv-Hj-zgJ" secondAttribute="trailing" constant="120" id="K2L-RR-axM"/>
+                            <constraint firstItem="fxv-Hj-zgJ" firstAttribute="leading" secondItem="Fkh-vH-acA" secondAttribute="leadingMargin" constant="120" id="Ne2-Nd-dr4"/>
+                            <constraint firstItem="fxv-Hj-zgJ" firstAttribute="top" secondItem="Fkh-vH-acA" secondAttribute="topMargin" id="QP3-wg-EGM"/>
+                            <constraint firstItem="dCd-kg-XRL" firstAttribute="top" secondItem="fxv-Hj-zgJ" secondAttribute="bottom" id="uxO-DY-CdH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVV-WI-7XG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -103,34 +98,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spanish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVB-jQ-nLE">
-                                <rect key="frame" x="271" y="167" width="61" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpp-Fh-oeh">
-                                <rect key="frame" x="276" y="381" width="56" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVV-3g-OKE">
-                                <rect key="frame" x="278" y="410" width="46" height="30"/>
+                                <rect key="frame" x="20" y="137" width="568" height="117"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="wQT-N5-vm5" kind="show" identifier="engToGo" id="eW2-Mt-rl5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QK-0L-q5C">
-                                <rect key="frame" x="271" y="208" width="46" height="30"/>
+                                <rect key="frame" x="27" y="262" width="553" height="94"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="GMW-Rs-Ja9" kind="show" identifier="spanToGo" id="wC3-8i-qpG"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn 123s Languages.png" translatesAutoresizingMaskIntoConstraints="NO" id="mKo-aT-k17">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mKo-aT-k17" firstAttribute="leading" secondItem="iRb-f0-KRY" secondAttribute="leadingMargin" constant="120" id="8Ur-rP-CZh"/>
+                            <constraint firstItem="Hlr-qG-AO5" firstAttribute="top" secondItem="mKo-aT-k17" secondAttribute="bottom" id="C8g-DM-Zdv"/>
+                            <constraint firstItem="mKo-aT-k17" firstAttribute="top" secondItem="iRb-f0-KRY" secondAttribute="topMargin" id="NYn-H2-jIw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mKo-aT-k17" secondAttribute="trailing" constant="120" id="d8w-Ye-CIz"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMs-8O-HLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -149,8 +141,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn Directions.png" translatesAutoresizingMaskIntoConstraints="NO" id="pqA-Np-ek5">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwm-Nd-zFA">
-                                <rect key="frame" x="233" y="257" width="46" height="30"/>
+                                <rect key="frame" x="20" y="434" width="568" height="146"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="Wr9-jE-gae" kind="show" identifier="goToUno" id="ESf-kP-9U5"/>
@@ -158,16 +153,22 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pqA-Np-ek5" firstAttribute="top" secondItem="mIf-km-Os1" secondAttribute="topMargin" id="4xa-4f-epR"/>
+                            <constraint firstItem="P3w-t6-A72" firstAttribute="top" secondItem="pqA-Np-ek5" secondAttribute="bottom" id="Tsc-Zi-Sq2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pqA-Np-ek5" secondAttribute="trailing" constant="120" id="VBI-dk-vlU"/>
+                            <constraint firstItem="pqA-Np-ek5" firstAttribute="leading" secondItem="mIf-km-Os1" secondAttribute="leadingMargin" constant="120" id="XzJ-dD-VQs"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yp-jp-sua" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2709" y="123"/>
+            <point key="canvasLocation" x="2709" y="169"/>
         </scene>
         <!--Uno View Controller-->
         <scene sceneID="VC4-qf-tRi">
             <objects>
-                <viewController id="Wr9-jE-gae" customClass="UnoViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="Wr9-jE-gae" customClass="UnoViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="O7K-Yf-KYr"/>
                         <viewControllerLayoutGuide type="bottom" id="a6e-wo-2aA"/>
@@ -176,14 +177,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ue-P5-aiV">
-                                <rect key="frame" x="136" y="125" width="8" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn ONE.png" translatesAutoresizingMaskIntoConstraints="NO" id="CeA-lz-6LO">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CeA-lz-6LO" firstAttribute="top" secondItem="ZWm-7g-fcS" secondAttribute="topMargin" id="11n-fj-qyF"/>
+                            <constraint firstItem="CeA-lz-6LO" firstAttribute="leading" secondItem="ZWm-7g-fcS" secondAttribute="leadingMargin" constant="120" id="Sch-Pv-LJV"/>
+                            <constraint firstItem="a6e-wo-2aA" firstAttribute="top" secondItem="CeA-lz-6LO" secondAttribute="bottom" id="Sxi-Pk-Cx3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CeA-lz-6LO" secondAttribute="trailing" constant="120" id="xpS-gf-Kiq"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="Vlw-4k-dgr" kind="show" identifier="unoToDos" id="inb-VK-yQT"/>
@@ -196,7 +200,7 @@
         <!--Dos View Controller-->
         <scene sceneID="WH1-Vl-wtA">
             <objects>
-                <viewController id="Vlw-4k-dgr" customClass="DosViewController" customModule="bonkNLearn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vlw-4k-dgr" customClass="DosViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h1B-r2-IeY"/>
                         <viewControllerLayoutGuide type="bottom" id="o1P-F6-c6r"/>
@@ -205,14 +209,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMS-j2-rq4">
-                                <rect key="frame" x="288" y="228" width="10" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn TWO.png" translatesAutoresizingMaskIntoConstraints="NO" id="507-oH-mB8">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="507-oH-mB8" firstAttribute="top" secondItem="ORk-rS-iFD" secondAttribute="topMargin" id="2ga-BQ-upL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="507-oH-mB8" secondAttribute="trailing" constant="120" id="IZw-2E-ql6"/>
+                            <constraint firstItem="o1P-F6-c6r" firstAttribute="top" secondItem="507-oH-mB8" secondAttribute="bottom" id="WgF-MZ-6O0"/>
+                            <constraint firstItem="507-oH-mB8" firstAttribute="leading" secondItem="ORk-rS-iFD" secondAttribute="leadingMargin" constant="120" id="lnp-2B-oQ4"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="Lmm-VA-Fd5" kind="show" identifier="dosToTres" id="cbp-dj-cf2"/>
@@ -220,12 +227,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNj-E3-4Ui" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2879" y="884"/>
+            <point key="canvasLocation" x="3303" y="960"/>
         </scene>
         <!--Tres View Controller-->
         <scene sceneID="ddA-Vl-73I">
             <objects>
-                <viewController id="Lmm-VA-Fd5" customClass="TresViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="Lmm-VA-Fd5" customClass="TresViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b0j-0s-GCP"/>
                         <viewControllerLayoutGuide type="bottom" id="DHh-ZK-cBh"/>
@@ -234,14 +241,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igv-i4-cM1">
-                                <rect key="frame" x="217" y="171" width="11" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn THREE.png" translatesAutoresizingMaskIntoConstraints="NO" id="60b-S5-vsY">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="60b-S5-vsY" secondAttribute="trailing" constant="120" id="Gcn-Xq-T1k"/>
+                            <constraint firstItem="60b-S5-vsY" firstAttribute="top" secondItem="7qk-bY-3p3" secondAttribute="topMargin" id="WJb-Z7-5Lo"/>
+                            <constraint firstItem="DHh-ZK-cBh" firstAttribute="top" secondItem="60b-S5-vsY" secondAttribute="bottom" id="phq-i1-bHG"/>
+                            <constraint firstItem="60b-S5-vsY" firstAttribute="leading" secondItem="7qk-bY-3p3" secondAttribute="leadingMargin" constant="120" id="yZ2-NC-YE0"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="iUY-4g-ZMK" kind="show" identifier="tresToCuatro" id="7Zb-Cs-px6"/>
@@ -254,7 +264,7 @@
         <!--Cuatro View Controller-->
         <scene sceneID="XgY-YD-f07">
             <objects>
-                <viewController id="iUY-4g-ZMK" customClass="CuatroViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="iUY-4g-ZMK" customClass="CuatroViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Xn-wT-Su6"/>
                         <viewControllerLayoutGuide type="bottom" id="Z4L-Uc-162"/>
@@ -263,14 +273,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lY2-Xh-tPk">
-                                <rect key="frame" x="139" y="177" width="11" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn FOUR.png" translatesAutoresizingMaskIntoConstraints="NO" id="VdA-7m-urS">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VdA-7m-urS" firstAttribute="top" secondItem="g1z-OS-8XN" secondAttribute="topMargin" id="Rjx-H5-0Me"/>
+                            <constraint firstItem="VdA-7m-urS" firstAttribute="leading" secondItem="g1z-OS-8XN" secondAttribute="leadingMargin" constant="120" id="c7X-3Y-QVu"/>
+                            <constraint firstItem="Z4L-Uc-162" firstAttribute="top" secondItem="VdA-7m-urS" secondAttribute="bottom" id="ddm-bC-Wmb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VdA-7m-urS" secondAttribute="trailing" constant="120" id="sEW-w7-IB5"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="Sfe-45-L1A" kind="show" identifier="cuatroToCinco" id="QQG-se-SSU"/>
@@ -283,7 +296,7 @@
         <!--Cinco View Controller-->
         <scene sceneID="Tsd-EW-PrD">
             <objects>
-                <viewController id="Sfe-45-L1A" customClass="CincoViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="Sfe-45-L1A" customClass="CincoViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YzP-a4-X4D"/>
                         <viewControllerLayoutGuide type="bottom" id="dnf-XM-WkQ"/>
@@ -292,14 +305,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEz-6R-i3B">
-                                <rect key="frame" x="108" y="175" width="11" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn FIVE.png" translatesAutoresizingMaskIntoConstraints="NO" id="xK5-41-snR">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dnf-XM-WkQ" firstAttribute="top" secondItem="xK5-41-snR" secondAttribute="bottom" id="46V-lH-AjB"/>
+                            <constraint firstItem="xK5-41-snR" firstAttribute="top" secondItem="ZQi-1R-2Wa" secondAttribute="topMargin" id="CS9-v7-A7r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xK5-41-snR" secondAttribute="trailing" constant="120" id="P55-G6-QoO"/>
+                            <constraint firstItem="xK5-41-snR" firstAttribute="leading" secondItem="ZQi-1R-2Wa" secondAttribute="leadingMargin" constant="120" id="md0-hS-Mob"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="p5L-nS-cFl" kind="show" identifier="cincoToSeis" id="1rh-HV-iYE"/>
@@ -312,7 +328,7 @@
         <!--Seis View Controller-->
         <scene sceneID="esW-wY-9DB">
             <objects>
-                <viewController id="p5L-nS-cFl" customClass="SeisViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="p5L-nS-cFl" customClass="SeisViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uZh-hg-jqm"/>
                         <viewControllerLayoutGuide type="bottom" id="j1V-Bc-eN3"/>
@@ -321,14 +337,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyF-IM-9xl">
-                                <rect key="frame" x="92" y="198" width="11" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn SIX.png" translatesAutoresizingMaskIntoConstraints="NO" id="CFf-Km-zh2">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j1V-Bc-eN3" firstAttribute="top" secondItem="CFf-Km-zh2" secondAttribute="bottom" id="XwQ-hV-I1o"/>
+                            <constraint firstItem="CFf-Km-zh2" firstAttribute="top" secondItem="xKT-4Z-7GL" secondAttribute="topMargin" id="heB-ut-mYw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CFf-Km-zh2" secondAttribute="trailing" constant="120" id="sJ7-iV-eIB"/>
+                            <constraint firstItem="CFf-Km-zh2" firstAttribute="leading" secondItem="xKT-4Z-7GL" secondAttribute="leadingMargin" constant="120" id="vgp-aY-FWa"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="3ax-5X-iEZ" kind="show" identifier="seisToSiete" id="BuP-4a-hcr"/>
@@ -350,8 +369,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn Directions.png" translatesAutoresizingMaskIntoConstraints="NO" id="EAF-JM-ieM">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufc-Jp-x1E">
-                                <rect key="frame" x="292" y="219" width="46" height="30"/>
+                                <rect key="frame" x="52" y="431" width="487" height="149"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="AsL-nu-Fcx" kind="show" identifier="goToOne" id="QAP-Da-Wdu"/>
@@ -359,6 +381,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EAF-JM-ieM" firstAttribute="leading" secondItem="LqL-zE-Sd9" secondAttribute="leadingMargin" constant="120" id="AcN-Zh-2n9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EAF-JM-ieM" secondAttribute="trailing" constant="120" id="KCh-Me-4mt"/>
+                            <constraint firstItem="EAF-JM-ieM" firstAttribute="top" secondItem="LqL-zE-Sd9" secondAttribute="topMargin" id="xcv-QJ-vLr"/>
+                            <constraint firstItem="gPB-pw-saO" firstAttribute="top" secondItem="EAF-JM-ieM" secondAttribute="bottom" id="xk8-nO-avN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lwc-0K-XPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -368,7 +396,7 @@
         <!--Two View Controller-->
         <scene sceneID="Hpb-7J-QNb">
             <objects>
-                <viewController id="Bai-85-qLM" customClass="TwoViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="Bai-85-qLM" customClass="TwoViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xSZ-2w-fwU"/>
                         <viewControllerLayoutGuide type="bottom" id="oLX-gd-ZmU"/>
@@ -377,14 +405,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDD-a1-CEQ">
-                                <rect key="frame" x="112" y="135" width="10" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn TWO.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ivs-6f-xz4">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ivs-6f-xz4" secondAttribute="trailing" constant="120" id="9na-bf-rMP"/>
+                            <constraint firstItem="Ivs-6f-xz4" firstAttribute="top" secondItem="cHZ-Sy-088" secondAttribute="topMargin" id="AWK-Y7-Toi"/>
+                            <constraint firstItem="oLX-gd-ZmU" firstAttribute="top" secondItem="Ivs-6f-xz4" secondAttribute="bottom" id="pFR-bl-oE0"/>
+                            <constraint firstItem="Ivs-6f-xz4" firstAttribute="leading" secondItem="cHZ-Sy-088" secondAttribute="leadingMargin" constant="120" id="t6T-rr-gGx"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="ibw-B9-78X" kind="show" identifier="twoToThree" id="QLz-h1-MPR"/>
@@ -397,7 +428,7 @@
         <!--Three View Controller-->
         <scene sceneID="7AN-Wf-wNQ">
             <objects>
-                <viewController id="ibw-B9-78X" customClass="ThreeViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="ibw-B9-78X" customClass="ThreeViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2AI-PX-Thr"/>
                         <viewControllerLayoutGuide type="bottom" id="wfU-IG-Iay"/>
@@ -406,14 +437,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vET-Xd-fpc">
-                                <rect key="frame" x="85" y="104" width="11" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn THREE.png" translatesAutoresizingMaskIntoConstraints="NO" id="iDh-Cn-Pj6">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="iDh-Cn-Pj6" secondAttribute="trailing" constant="120" id="124-uO-AOS"/>
+                            <constraint firstItem="iDh-Cn-Pj6" firstAttribute="leading" secondItem="bfi-of-gDt" secondAttribute="leadingMargin" constant="120" id="52w-mA-DMN"/>
+                            <constraint firstItem="wfU-IG-Iay" firstAttribute="top" secondItem="iDh-Cn-Pj6" secondAttribute="bottom" id="CKv-su-BkW"/>
+                            <constraint firstItem="iDh-Cn-Pj6" firstAttribute="top" secondItem="bfi-of-gDt" secondAttribute="topMargin" id="K9z-Xq-A7s"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="455-Ut-UG6" kind="show" identifier="threeToFour" id="yjI-LI-MMi"/>
@@ -426,7 +460,7 @@
         <!--Four View Controller-->
         <scene sceneID="mnc-c8-X2L">
             <objects>
-                <viewController id="455-Ut-UG6" customClass="FourViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="455-Ut-UG6" customClass="FourViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XCr-no-hwc"/>
                         <viewControllerLayoutGuide type="bottom" id="ngF-ef-TUV"/>
@@ -435,14 +469,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9t-S3-1bo">
-                                <rect key="frame" x="173" y="55" width="25" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn FOUR.png" translatesAutoresizingMaskIntoConstraints="NO" id="l8g-s7-eIi">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l8g-s7-eIi" firstAttribute="leading" secondItem="6Mk-de-a9g" secondAttribute="leadingMargin" constant="120" id="Cbe-PB-aU6"/>
+                            <constraint firstItem="l8g-s7-eIi" firstAttribute="top" secondItem="6Mk-de-a9g" secondAttribute="topMargin" id="IOs-gl-5mN"/>
+                            <constraint firstItem="ngF-ef-TUV" firstAttribute="top" secondItem="l8g-s7-eIi" secondAttribute="bottom" id="Wli-kU-bM4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l8g-s7-eIi" secondAttribute="trailing" constant="120" id="dfV-5b-xUc"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="aUK-0H-18f" kind="show" identifier="fourToFive" id="DLY-Ai-T5X"/>
@@ -455,7 +492,7 @@
         <!--Five View Controller-->
         <scene sceneID="dTn-xp-rVl">
             <objects>
-                <viewController id="aUK-0H-18f" customClass="FiveViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="aUK-0H-18f" customClass="FiveViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aSx-Zn-wNe"/>
                         <viewControllerLayoutGuide type="bottom" id="ku1-co-lSP"/>
@@ -464,14 +501,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjT-XO-ORY">
-                                <rect key="frame" x="87" y="97" width="11" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn FIVE.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xt3-vY-ZKj">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ku1-co-lSP" firstAttribute="top" secondItem="Xt3-vY-ZKj" secondAttribute="bottom" id="5Ah-yR-KYk"/>
+                            <constraint firstItem="Xt3-vY-ZKj" firstAttribute="leading" secondItem="UYP-LW-36f" secondAttribute="leadingMargin" constant="120" id="ILu-5u-N1G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xt3-vY-ZKj" secondAttribute="trailing" constant="120" id="cj4-na-zuV"/>
+                            <constraint firstItem="Xt3-vY-ZKj" firstAttribute="top" secondItem="UYP-LW-36f" secondAttribute="topMargin" id="iKP-8V-wGR"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="3d7-ho-JA2" kind="show" identifier="fiveToSix" id="q6N-P9-wtf"/>
@@ -484,7 +524,7 @@
         <!--Six View Controller-->
         <scene sceneID="ovz-SW-jYj">
             <objects>
-                <viewController id="3d7-ho-JA2" customClass="SixViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="3d7-ho-JA2" customClass="SixViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="srM-A1-b0b"/>
                         <viewControllerLayoutGuide type="bottom" id="8a6-Wb-Tsr"/>
@@ -493,14 +533,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6i-ow-xmY">
-                                <rect key="frame" x="84" y="62" width="11" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn SIX.png" translatesAutoresizingMaskIntoConstraints="NO" id="p5c-BO-onK">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="p5c-BO-onK" secondAttribute="trailing" constant="120" id="B2t-LV-YfK"/>
+                            <constraint firstItem="p5c-BO-onK" firstAttribute="top" secondItem="aYm-CA-aYG" secondAttribute="topMargin" id="OuZ-gh-03Y"/>
+                            <constraint firstItem="8a6-Wb-Tsr" firstAttribute="top" secondItem="p5c-BO-onK" secondAttribute="bottom" id="PdG-33-XH2"/>
+                            <constraint firstItem="p5c-BO-onK" firstAttribute="leading" secondItem="aYm-CA-aYG" secondAttribute="leadingMargin" constant="120" id="fcg-NJ-Pmt"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="Jft-ct-e3p" kind="show" identifier="sixToSeven" id="JuT-r7-YuO"/>
@@ -513,7 +556,7 @@
         <!--Seven View Controller-->
         <scene sceneID="btm-ie-ib3">
             <objects>
-                <viewController id="Jft-ct-e3p" customClass="SevenViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="Jft-ct-e3p" customClass="SevenViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ore-0z-B7P"/>
                         <viewControllerLayoutGuide type="bottom" id="mVe-F6-y5H"/>
@@ -522,14 +565,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RcW-fv-6Ps">
-                                <rect key="frame" x="60" y="28" width="10" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn SEVEN.png" translatesAutoresizingMaskIntoConstraints="NO" id="HUx-lV-Mwn">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mVe-F6-y5H" firstAttribute="top" secondItem="HUx-lV-Mwn" secondAttribute="bottom" id="Ewa-GO-nSp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HUx-lV-Mwn" secondAttribute="trailing" constant="120" id="HAh-YB-Wcy"/>
+                            <constraint firstItem="HUx-lV-Mwn" firstAttribute="leading" secondItem="2nz-es-ry4" secondAttribute="leadingMargin" constant="120" id="PUn-mH-jYq"/>
+                            <constraint firstItem="HUx-lV-Mwn" firstAttribute="top" secondItem="2nz-es-ry4" secondAttribute="topMargin" id="bW9-qF-pPi"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="oc5-Di-mWq" kind="show" identifier="sevenToEight" id="IGC-nZ-4Ut"/>
@@ -542,7 +588,7 @@
         <!--Siete View Controller-->
         <scene sceneID="Hv3-FO-d4N">
             <objects>
-                <viewController id="3ax-5X-iEZ" customClass="SieteViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="3ax-5X-iEZ" customClass="SieteViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vcL-pF-rcS"/>
                         <viewControllerLayoutGuide type="bottom" id="kdB-a2-W3Y"/>
@@ -551,14 +597,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yce-Fx-rff">
-                                <rect key="frame" x="116" y="194" width="10" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn SEVEN.png" translatesAutoresizingMaskIntoConstraints="NO" id="14T-S2-DEV">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="14T-S2-DEV" firstAttribute="leading" secondItem="ofd-Za-sYp" secondAttribute="leadingMargin" constant="120" id="0Kj-1G-Au3"/>
+                            <constraint firstItem="kdB-a2-W3Y" firstAttribute="top" secondItem="14T-S2-DEV" secondAttribute="bottom" id="1at-gR-0Rv"/>
+                            <constraint firstItem="14T-S2-DEV" firstAttribute="top" secondItem="ofd-Za-sYp" secondAttribute="topMargin" id="1yd-8E-UOq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="14T-S2-DEV" secondAttribute="trailing" constant="120" id="roF-Mr-gVh"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="6EU-uY-3SH" kind="show" identifier="sieteToOcho" id="nCP-Fc-A2m"/>
@@ -571,7 +620,7 @@
         <!--Ocho View Controller-->
         <scene sceneID="tX4-Lt-cB7">
             <objects>
-                <viewController id="6EU-uY-3SH" customClass="OchoViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="6EU-uY-3SH" customClass="OchoViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9bv-eu-XqS"/>
                         <viewControllerLayoutGuide type="bottom" id="X5G-w3-uMh"/>
@@ -580,14 +629,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4f-Jc-0t7">
-                                <rect key="frame" x="66" y="192" width="11" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn EIGHT.png" translatesAutoresizingMaskIntoConstraints="NO" id="WrE-GW-Kcr">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X5G-w3-uMh" firstAttribute="top" secondItem="WrE-GW-Kcr" secondAttribute="bottom" id="Vdi-MR-8ne"/>
+                            <constraint firstItem="WrE-GW-Kcr" firstAttribute="leading" secondItem="0OL-0m-qQa" secondAttribute="leadingMargin" constant="120" id="a9f-u7-Dfm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WrE-GW-Kcr" secondAttribute="trailing" constant="120" id="bc2-A0-4jt"/>
+                            <constraint firstItem="WrE-GW-Kcr" firstAttribute="top" secondItem="0OL-0m-qQa" secondAttribute="topMargin" id="lHx-uY-vkv"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="Ztx-hJ-tKZ" kind="show" identifier="ochoToNueve" id="4LU-jq-EHU"/>
@@ -600,7 +652,7 @@
         <!--Nueve View Controller-->
         <scene sceneID="Pz1-eO-iqE">
             <objects>
-                <viewController id="Ztx-hJ-tKZ" customClass="NueveViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="Ztx-hJ-tKZ" customClass="NueveViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ylr-mG-VUq"/>
                         <viewControllerLayoutGuide type="bottom" id="JE0-ho-rvH"/>
@@ -609,14 +661,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ln-Qo-U0N">
-                                <rect key="frame" x="89" y="195" width="11" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn NINE.png" translatesAutoresizingMaskIntoConstraints="NO" id="tZ1-0E-6FZ">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tZ1-0E-6FZ" firstAttribute="leading" secondItem="XDe-Do-A3a" secondAttribute="leadingMargin" constant="120" id="4IK-5u-7ov"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tZ1-0E-6FZ" secondAttribute="trailing" constant="120" id="Cs7-PE-UbI"/>
+                            <constraint firstItem="JE0-ho-rvH" firstAttribute="top" secondItem="tZ1-0E-6FZ" secondAttribute="bottom" id="DZ7-28-oJg"/>
+                            <constraint firstItem="tZ1-0E-6FZ" firstAttribute="top" secondItem="XDe-Do-A3a" secondAttribute="topMargin" id="b79-4d-nYh"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="fYm-u1-OLW" kind="show" identifier="nueveToDiez" id="p2V-Mh-6g6"/>
@@ -624,12 +679,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hnC-BB-dXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7721" y="806"/>
+            <point key="canvasLocation" x="7943" y="1062"/>
         </scene>
         <!--Diez View Controller-->
         <scene sceneID="a1j-fl-rEC">
             <objects>
-                <viewController id="fYm-u1-OLW" customClass="DiezViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="fYm-u1-OLW" customClass="DiezViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pFS-ZL-Dj0"/>
                         <viewControllerLayoutGuide type="bottom" id="ZLo-gN-r3y"/>
@@ -638,18 +693,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNN-wa-NOW">
-                                <rect key="frame" x="76" y="221" width="18" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn TEN.png" translatesAutoresizingMaskIntoConstraints="NO" id="hvZ-sH-ILb">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENv-Fu-lYE">
-                                <rect key="frame" x="76" y="278" width="46" height="30"/>
+                                <rect key="frame" x="53" y="413" width="527" height="167"/>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hvZ-sH-ILb" firstAttribute="top" secondItem="4Na-WR-PjS" secondAttribute="topMargin" id="HeD-ff-g6B"/>
+                            <constraint firstItem="hvZ-sH-ILb" firstAttribute="leading" secondItem="4Na-WR-PjS" secondAttribute="leadingMargin" constant="120" id="KJd-J6-2Fj"/>
+                            <constraint firstItem="ZLo-gN-r3y" firstAttribute="top" secondItem="hvZ-sH-ILb" secondAttribute="bottom" id="YME-1h-ONA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hvZ-sH-ILb" secondAttribute="trailing" constant="120" id="d4Z-uF-3pf"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="diezToMenu" id="Wdy-o0-7lh"/>
@@ -657,12 +715,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Niq-qz-46K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1290" y="658"/>
+            <point key="canvasLocation" x="2787" y="920"/>
         </scene>
         <!--Eight View Controller-->
         <scene sceneID="Cy9-pa-V4D">
             <objects>
-                <viewController id="oc5-Di-mWq" customClass="EightViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="oc5-Di-mWq" customClass="EightViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IQ6-Zq-sTd"/>
                         <viewControllerLayoutGuide type="bottom" id="soG-7a-HPC"/>
@@ -671,14 +729,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz6-yV-C0R">
-                                <rect key="frame" x="90" y="143" width="10" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn EIGHT.png" translatesAutoresizingMaskIntoConstraints="NO" id="rNZ-Np-lbp">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rNZ-Np-lbp" firstAttribute="top" secondItem="KQx-mQ-cv5" secondAttribute="topMargin" id="DMf-dG-91v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rNZ-Np-lbp" secondAttribute="trailing" constant="120" id="LWN-At-9Yn"/>
+                            <constraint firstItem="soG-7a-HPC" firstAttribute="top" secondItem="rNZ-Np-lbp" secondAttribute="bottom" id="ZBA-vF-SyP"/>
+                            <constraint firstItem="rNZ-Np-lbp" firstAttribute="leading" secondItem="KQx-mQ-cv5" secondAttribute="leadingMargin" constant="120" id="dsb-zU-6D3"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="0S9-VP-xxU" kind="show" identifier="eightToNine" id="TXa-Dd-ehy"/>
@@ -691,7 +752,7 @@
         <!--Nine View Controller-->
         <scene sceneID="u88-3H-4G9">
             <objects>
-                <viewController id="0S9-VP-xxU" customClass="NineViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="0S9-VP-xxU" customClass="NineViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vqg-rZ-quq"/>
                         <viewControllerLayoutGuide type="bottom" id="Py2-jT-nD4"/>
@@ -700,14 +761,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehx-sb-Gba">
-                                <rect key="frame" x="293" y="195" width="14" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn NINE.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xjm-y2-lhL">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Py2-jT-nD4" firstAttribute="top" secondItem="Xjm-y2-lhL" secondAttribute="bottom" id="TmY-gw-tyu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xjm-y2-lhL" secondAttribute="trailing" constant="120" id="e7J-Tw-wXy"/>
+                            <constraint firstItem="Xjm-y2-lhL" firstAttribute="top" secondItem="PaA-aw-dMe" secondAttribute="topMargin" id="kFI-Oe-uMr"/>
+                            <constraint firstItem="Xjm-y2-lhL" firstAttribute="leading" secondItem="PaA-aw-dMe" secondAttribute="leadingMargin" constant="120" id="sxw-5G-vR1"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="0b2-bL-9b5" kind="show" identifier="nineToTen" id="jff-ga-BwC"/>
@@ -720,7 +784,7 @@
         <!--Ten View Controller-->
         <scene sceneID="zIs-Eu-6xd">
             <objects>
-                <viewController id="0b2-bL-9b5" customClass="TenViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="0b2-bL-9b5" customClass="TenViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lud-uh-Ysv"/>
                         <viewControllerLayoutGuide type="bottom" id="peL-v6-XoF"/>
@@ -729,14 +793,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuM-R6-fho">
-                                <rect key="frame" x="312" y="251" width="18" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn TEN.png" translatesAutoresizingMaskIntoConstraints="NO" id="tgB-mr-BOJ">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="peL-v6-XoF" firstAttribute="top" secondItem="tgB-mr-BOJ" secondAttribute="bottom" id="CUa-Rb-pYI"/>
+                            <constraint firstItem="tgB-mr-BOJ" firstAttribute="leading" secondItem="9zc-sV-cqt" secondAttribute="leadingMargin" constant="120" id="QxQ-mN-fQ7"/>
+                            <constraint firstItem="tgB-mr-BOJ" firstAttribute="top" secondItem="9zc-sV-cqt" secondAttribute="topMargin" id="dem-Uo-19L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tgB-mr-BOJ" secondAttribute="trailing" constant="120" id="q92-np-XTa"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="tenToMenu" id="0AX-KS-DjB"/>
@@ -744,12 +811,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tk-dI-gMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="156" y="1596"/>
+            <point key="canvasLocation" x="-352" y="1765"/>
         </scene>
-        <!--View Controller-->
+        <!--Activities View Controller-->
         <scene sceneID="ezF-cc-biK">
             <objects>
-                <viewController id="1Pl-wR-Zpq" sceneMemberID="viewController">
+                <viewController id="1Pl-wR-Zpq" customClass="ActivitiesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RKY-Kh-S00"/>
                         <viewControllerLayoutGuide type="bottom" id="9fe-eI-Zny"/>
@@ -759,20 +826,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHB-ef-Bj4">
-                                <rect key="frame" x="247" y="216" width="46" height="30"/>
+                                <rect key="frame" x="0.0" y="301" width="290" height="91"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="Y35-Gc-X0f" kind="show" identifier="actToAnimals" id="cf8-Ws-ekp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANi-SQ-Vzu">
-                                <rect key="frame" x="246" y="171" width="66" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn INFANT.png" translatesAutoresizingMaskIntoConstraints="NO" id="8rM-pV-aJz">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="8rM-pV-aJz" secondAttribute="trailing" constant="120" id="AJs-jE-T4k"/>
+                            <constraint firstItem="9fe-eI-Zny" firstAttribute="top" secondItem="8rM-pV-aJz" secondAttribute="bottom" id="Abm-A0-Iy7"/>
+                            <constraint firstItem="8rM-pV-aJz" firstAttribute="leading" secondItem="OrK-tm-DeF" secondAttribute="leadingMargin" constant="120" id="Jhy-p6-Diu"/>
+                            <constraint firstItem="8rM-pV-aJz" firstAttribute="top" secondItem="OrK-tm-DeF" secondAttribute="topMargin" id="skm-j6-tP2"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAj-Bp-pqC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -782,7 +852,7 @@
         <!--Animal Go View Controller-->
         <scene sceneID="Ubg-qa-hAQ">
             <objects>
-                <viewController id="Y35-Gc-X0f" customClass="AnimalGoViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnimalGoViewController" id="Y35-Gc-X0f" customClass="AnimalGoViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BZP-PJ-lfQ"/>
                         <viewControllerLayoutGuide type="bottom" id="CL7-7O-yMX"/>
@@ -791,8 +861,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn Directions.png" translatesAutoresizingMaskIntoConstraints="NO" id="enr-kl-ZgO">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0K-OW-fJd">
-                                <rect key="frame" x="111" y="141" width="46" height="30"/>
+                                <rect key="frame" x="20" y="432" width="569" height="155"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="goAnim_click:" destination="Y35-Gc-X0f" eventType="touchUpInside" id="DKE-ZE-v1C"/>
@@ -800,6 +873,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CL7-7O-yMX" firstAttribute="top" secondItem="enr-kl-ZgO" secondAttribute="bottom" id="9hl-mI-iF8"/>
+                            <constraint firstItem="enr-kl-ZgO" firstAttribute="top" secondItem="R11-Ed-br7" secondAttribute="topMargin" id="LBG-nV-pAK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="enr-kl-ZgO" secondAttribute="trailing" constant="120" id="hY9-lk-VCc"/>
+                            <constraint firstItem="enr-kl-ZgO" firstAttribute="leading" secondItem="R11-Ed-br7" secondAttribute="leadingMargin" constant="120" id="lbh-U3-wJh"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="goAnimBtn" destination="x0K-OW-fJd" id="pO3-RS-hht"/>
@@ -814,7 +893,7 @@
         <!--Elephant View Controller-->
         <scene sceneID="SG3-Ln-fcp">
             <objects>
-                <viewController storyboardIdentifier="ElephantViewController" id="yMj-7a-eVf" customClass="ElephantViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ElephantViewController" id="yMj-7a-eVf" customClass="ElephantViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rgS-Ia-5Ah"/>
                         <viewControllerLayoutGuide type="bottom" id="ME1-I4-Zh8"/>
@@ -823,18 +902,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gta-uv-tib">
-                                <rect key="frame" x="277" y="173" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elephant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeC-Pp-b0J">
-                                <rect key="frame" x="153" y="80" width="67" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn CHIPMUNK.png" translatesAutoresizingMaskIntoConstraints="NO" id="QG9-Za-RMX">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="QG9-Za-RMX" secondAttribute="trailing" constant="120" id="8LF-Ce-SNm"/>
+                            <constraint firstItem="QG9-Za-RMX" firstAttribute="leading" secondItem="Wrh-UH-bn3" secondAttribute="leadingMargin" constant="120" id="Crw-u6-ZYK"/>
+                            <constraint firstItem="QG9-Za-RMX" firstAttribute="top" secondItem="Wrh-UH-bn3" secondAttribute="topMargin" id="IRZ-Ra-PnE"/>
+                            <constraint firstItem="ME1-I4-Zh8" firstAttribute="top" secondItem="QG9-Za-RMX" secondAttribute="bottom" id="yeG-xe-Ay6"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="eLC-xk-wOy" kind="show" id="Hq6-yK-vJp"/>
@@ -847,7 +925,7 @@
         <!--Dog View Controller-->
         <scene sceneID="2xu-AF-63i">
             <objects>
-                <viewController storyboardIdentifier="DogViewController" id="eLC-xk-wOy" customClass="DogViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DogViewController" id="eLC-xk-wOy" customClass="DogViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PBF-FY-fBf"/>
                         <viewControllerLayoutGuide type="bottom" id="FvI-vs-joY"/>
@@ -856,14 +934,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBo-1X-wWX">
-                                <rect key="frame" x="94" y="63" width="32" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn PIG.png" translatesAutoresizingMaskIntoConstraints="NO" id="iwT-Bj-KEi">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iwT-Bj-KEi" firstAttribute="leading" secondItem="rnO-YC-lrQ" secondAttribute="leadingMargin" constant="120" id="63f-YP-dMt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iwT-Bj-KEi" secondAttribute="trailing" constant="120" id="7sZ-mN-hQR"/>
+                            <constraint firstItem="FvI-vs-joY" firstAttribute="top" secondItem="iwT-Bj-KEi" secondAttribute="bottom" id="mfc-eC-Y9U"/>
+                            <constraint firstItem="iwT-Bj-KEi" firstAttribute="top" secondItem="rnO-YC-lrQ" secondAttribute="topMargin" id="tYX-aU-wmZ"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="yMj-7a-eVf" kind="show" id="22H-jK-qew"/>
@@ -871,12 +952,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9UG-FL-e6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2606" y="-467"/>
+            <point key="canvasLocation" x="3265" y="-541"/>
         </scene>
         <!--One View Controller-->
         <scene sceneID="ibf-BO-bRz">
             <objects>
-                <viewController id="AsL-nu-Fcx" customClass="OneViewController" customModule="bonkNLearn" sceneMemberID="viewController">
+                <viewController id="AsL-nu-Fcx" customClass="OneViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xYd-xi-inF"/>
                         <viewControllerLayoutGuide type="bottom" id="TgN-qQ-6Un"/>
@@ -885,14 +966,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQS-eX-pqw">
-                                <rect key="frame" x="281" y="229" width="19" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn ONE.png" translatesAutoresizingMaskIntoConstraints="NO" id="mQh-4C-SOr">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mQh-4C-SOr" firstAttribute="leading" secondItem="2In-ks-acb" secondAttribute="leadingMargin" constant="120" id="Fay-py-j5g"/>
+                            <constraint firstItem="TgN-qQ-6Un" firstAttribute="top" secondItem="mQh-4C-SOr" secondAttribute="bottom" id="GGi-cC-04N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mQh-4C-SOr" secondAttribute="trailing" constant="120" id="oMB-CT-gTL"/>
+                            <constraint firstItem="mQh-4C-SOr" firstAttribute="top" secondItem="2In-ks-acb" secondAttribute="topMargin" id="uhO-cB-nWj"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="Bai-85-qLM" kind="show" identifier="oneToTwo" id="q0Y-qD-WbM"/>
@@ -903,9 +987,28 @@
             <point key="canvasLocation" x="946" y="1934"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BonknLearn 123s Languages.png" width="750" height="1334"/>
+        <image name="BonknLearn AGES.png" width="750" height="1334"/>
+        <image name="BonknLearn CHIPMUNK.png" width="750" height="1334"/>
+        <image name="BonknLearn Directions.png" width="750" height="1334"/>
+        <image name="BonknLearn EIGHT.png" width="750" height="1334"/>
+        <image name="BonknLearn FIVE.png" width="750" height="1334"/>
+        <image name="BonknLearn FOUR.png" width="750" height="1334"/>
+        <image name="BonknLearn INFANT.png" width="750" height="1334"/>
+        <image name="BonknLearn NINE.png" width="750" height="1334"/>
+        <image name="BonknLearn ONE.png" width="750" height="1334"/>
+        <image name="BonknLearn PIG.png" width="750" height="1334"/>
+        <image name="BonknLearn SEVEN.png" width="750" height="1334"/>
+        <image name="BonknLearn SIX.png" width="750" height="1334"/>
+        <image name="BonknLearn TEN.png" width="750" height="1334"/>
+        <image name="BonknLearn THREE.png" width="750" height="1334"/>
+        <image name="BonknLearn TODDLER.png" width="750" height="1334"/>
+        <image name="BonknLearn TWO.png" width="750" height="1334"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Wdy-o0-7lh"/>
-        <segue reference="vpZ-Xg-px3"/>
+        <segue reference="0AX-KS-DjB"/>
         <segue reference="UmE-lG-O2I"/>
+        <segue reference="vpZ-Xg-px3"/>
     </inferredMetricsTieBreakers>
 </document>

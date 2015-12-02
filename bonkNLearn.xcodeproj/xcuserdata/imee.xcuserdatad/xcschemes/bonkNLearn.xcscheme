@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "487DDF7B1C04BDE100E4A017"
-               BuildableName = "bonkNLearn.app"
+               BuildableName = "BonkNLearn.temp_caseinsensitive_rename.app"
                BlueprintName = "bonkNLearn"
-               ReferencedContainer = "container:bonkNLearn.xcodeproj">
+               ReferencedContainer = "container:BonkNLearn.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "487DDF8F1C04BDE100E4A017"
-               BuildableName = "bonkNLearnTests.xctest"
+               BuildableName = "BonkNLearn.temp_caseinsensitive_rename.xctest"
                BlueprintName = "bonkNLearnTests"
-               ReferencedContainer = "container:bonkNLearn.xcodeproj">
+               ReferencedContainer = "container:BonkNLearn.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "487DDF9A1C04BDE100E4A017"
-               BuildableName = "bonkNLearnUITests.xctest"
+               BuildableName = "BonkNLearn.temp_caseinsensitive_rename.xctest"
                BlueprintName = "bonkNLearnUITests"
-               ReferencedContainer = "container:bonkNLearn.xcodeproj">
+               ReferencedContainer = "container:BonkNLearn.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "487DDF7B1C04BDE100E4A017"
-            BuildableName = "bonkNLearn.app"
+            BuildableName = "BonkNLearn.temp_caseinsensitive_rename.app"
             BlueprintName = "bonkNLearn"
-            ReferencedContainer = "container:bonkNLearn.xcodeproj">
+            ReferencedContainer = "container:BonkNLearn.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "487DDF7B1C04BDE100E4A017"
-            BuildableName = "bonkNLearn.app"
+            BuildableName = "BonkNLearn.temp_caseinsensitive_rename.app"
             BlueprintName = "bonkNLearn"
-            ReferencedContainer = "container:bonkNLearn.xcodeproj">
+            ReferencedContainer = "container:BonkNLearn.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "487DDF7B1C04BDE100E4A017"
-            BuildableName = "bonkNLearn.app"
+            BuildableName = "BonkNLearn.temp_caseinsensitive_rename.app"
             BlueprintName = "bonkNLearn"
-            ReferencedContainer = "container:bonkNLearn.xcodeproj">
+            ReferencedContainer = "container:BonkNLearn.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

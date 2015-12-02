@@ -78,15 +78,17 @@ class AnimalGoViewController: UIViewController {
     
     func outputAccelerationData(acceleration: CMAcceleration) {
         
-        if (acceleration.z < -0.80) {
+       // if (acceleration.z < -0.80) {
+        
+        if (acceleration.z < -0.40 || acceleration.z < 0.40  || acceleration.x < -0.40 || acceleration.x < 0.40  || acceleration.y < -0.40  || acceleration.y < 0.40) {
             print("Z is here.")
 
             stopAccelerometerUpdates()
             
          
-            let random = Int(arc4random_uniform(UInt32(2)))
+         //   let random = Int(arc4random_uniform(UInt32(3)))
             
-        //   let random = 0
+          let random = 2
             switch random
             {
             case 0:
@@ -96,17 +98,17 @@ class AnimalGoViewController: UIViewController {
                 let appDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
                 appDelegate.window?.rootViewController = elephantvc
                 
-              //  self.presentViewController(elephantvc, animated: false, completion: nil)
+              self.presentViewController(elephantvc, animated: false, completion: nil)
                 
                 
-                let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
-                dispatch_async(dispatch_get_global_queue(priority, 0)) {
-                    // do some task
-                    dispatch_async(dispatch_get_main_queue()) {
-                        self.presentViewController(elephantvc, animated: false, completion: nil)
-                        self.dismissViewControllerAnimated(false, completion: nil)
-                    }
-                }
+//                let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+//                dispatch_async(dispatch_get_global_queue(priority, 0)) {
+//                    // do some task
+//                    dispatch_async(dispatch_get_main_queue()) {
+//                        self.presentViewController(elephantvc, animated: false, completion: nil)
+//                        self.dismissViewControllerAnimated(false, completion: nil)
+//                    }
+//                }
                 
 
                 
@@ -145,11 +147,13 @@ class AnimalGoViewController: UIViewController {
             default:
                 print("Something else")
                 let dogvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("DogViewController") as UIViewController
+                let animalvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("AnimalGoViewController") as UIViewController
+
                 // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
                 let appDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
                 appDelegate.window?.rootViewController = dogvc
                 
-              //  self.presentViewController(dogvc, animated: false, completion: nil)
+            //  self.presentViewController(dogvc, animated: false, completion: nil)
                 
                 
                 let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
@@ -157,7 +161,7 @@ class AnimalGoViewController: UIViewController {
                     // do some task
                     dispatch_async(dispatch_get_main_queue()) {
                         self.presentViewController(dogvc, animated: false, completion: nil)
-                        self.dismissViewControllerAnimated(false, completion: nil)
+                      animalvc.dismissViewControllerAnimated(false, completion: nil)
                     }
                 }
                 

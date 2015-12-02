@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:bonkNLearn.xcodeproj">
+      location = "self:/Users/imee/bonk/bonkNLearn/BonkNLearn.xcodeproj">
    </FileRef>
 </Workspace>

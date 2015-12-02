@@ -97,19 +97,21 @@ class DogViewController: UIViewController {
             stopAccelerometerUpdates()
             
             
-            let random = Int(arc4random_uniform(UInt32(2)))
+          //  let random = Int(arc4random_uniform(UInt32(1)))
             
-            //            let random = 2
+                        let random = 0
             switch random
             {
             case 0:
                 print("elephant")
                 let elephantvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ElephantViewController") as UIViewController
+                let dogvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("DogViewController") as UIViewController
+
                 // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
                 let appDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
                 appDelegate.window?.rootViewController = elephantvc
                 
-              ///  self.presentViewController(elephantvc, animated: false, completion: nil)
+            //  self.presentViewController(elephantvc, animated: false, completion: nil)
                 
                 
                 let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
@@ -117,7 +119,7 @@ class DogViewController: UIViewController {
                     // do some task
                     dispatch_async(dispatch_get_main_queue()) {
                         self.presentViewController(elephantvc, animated: false, completion: nil)
-                        self.dismissViewControllerAnimated(false, completion: nil)
+                        dogvc.dismissViewControllerAnimated(false, completion: nil)
                     }
                 }
                 
@@ -162,7 +164,7 @@ class DogViewController: UIViewController {
                 let appDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
                 appDelegate.window?.rootViewController = dogvc
                 
-              //  self.presentViewController(dogvc, animated: false, completion: nil)
+           //   self.presentViewController(dogvc, animated: false, completion: nil)
                 
                 
                 let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT

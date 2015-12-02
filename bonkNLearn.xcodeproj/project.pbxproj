@@ -53,6 +53,25 @@
 		9B87B1211C07B0E200C76919 /* Eight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B87B1201C07B0E200C76919 /* Eight.mp3 */; };
 		9B87B1231C07B0F600C76919 /* Nine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B87B1221C07B0F600C76919 /* Nine.mp3 */; };
 		9B87B1251C07B10900C76919 /* Ten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B87B1241C07B10900C76919 /* Ten.mp3 */; };
+		9BA10B871C0E8200005A569A /* BonknLearn CHIPMUNK.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10B861C0E8200005A569A /* BonknLearn CHIPMUNK.png */; };
+		9BA10B891C0E8212005A569A /* BonknLearn 123s Languages.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10B881C0E8212005A569A /* BonknLearn 123s Languages.png */; };
+		9BA10B8B1C0E8253005A569A /* BonknLearn Directions.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10B8A1C0E8253005A569A /* BonknLearn Directions.png */; };
+		9BA10B8D1C0E8276005A569A /* BonknLearn INFANT.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10B8C1C0E8276005A569A /* BonknLearn INFANT.png */; };
+		9BA10B8F1C0E8280005A569A /* BonknLearn PIG.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10B8E1C0E8280005A569A /* BonknLearn PIG.png */; };
+		9BA10B911C0E8291005A569A /* BonknLearn TODDLER.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10B901C0E8291005A569A /* BonknLearn TODDLER.png */; };
+		9BA10B931C0E82A3005A569A /* BonknLearn ONE.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10B921C0E82A3005A569A /* BonknLearn ONE.png */; };
+		9BA10B951C0E82AF005A569A /* BonknLearn TWO.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10B941C0E82AF005A569A /* BonknLearn TWO.png */; };
+		9BA10B971C0E82B6005A569A /* BonknLearn THREE.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10B961C0E82B6005A569A /* BonknLearn THREE.png */; };
+		9BA10B991C0E82C1005A569A /* BonknLearn FOUR.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10B981C0E82C1005A569A /* BonknLearn FOUR.png */; };
+		9BA10B9B1C0E82C7005A569A /* BonknLearn FIVE.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10B9A1C0E82C7005A569A /* BonknLearn FIVE.png */; };
+		9BA10B9D1C0E82D0005A569A /* BonknLearn SIX.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10B9C1C0E82D0005A569A /* BonknLearn SIX.png */; };
+		9BA10B9F1C0E82D6005A569A /* BonknLearn SEVEN.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10B9E1C0E82D6005A569A /* BonknLearn SEVEN.png */; };
+		9BA10BA11C0E82E3005A569A /* BonknLearn EIGHT.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10BA01C0E82E3005A569A /* BonknLearn EIGHT.png */; };
+		9BA10BA31C0E82F1005A569A /* BonknLearn NINE.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10BA21C0E82F1005A569A /* BonknLearn NINE.png */; };
+		9BA10BA51C0E82F7005A569A /* BonknLearn TEN.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10BA41C0E82F7005A569A /* BonknLearn TEN.png */; };
+		9BA10BA71C0E86DA005A569A /* BonknLearn AGES.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10BA61C0E86DA005A569A /* BonknLearn AGES.png */; };
+		9BA10BA91C0E8FBB005A569A /* Chipmunk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10BA81C0E8FBB005A569A /* Chipmunk.mp3 */; };
+		9BA10BAB1C0E8FC3005A569A /* pig.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10BAA1C0E8FC3005A569A /* pig.mp3 */; };
 		9BDBD40B1C07739100BB1021 /* UnoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBD40A1C07739100BB1021 /* UnoViewController.swift */; };
 		9BDBD40D1C07749A00BB1021 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDBD40C1C07749A00BB1021 /* AVFoundation.framework */; };
 		9BDBD40F1C0774A000BB1021 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDBD40E1C0774A000BB1021 /* CoreMotion.framework */; };
@@ -79,17 +98,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		487DDF7C1C04BDE100E4A017 /* bonkNLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bonkNLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		487DDF7C1C04BDE100E4A017 /* BonkNLearn.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonkNLearn.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487DDF7F1C04BDE100E4A017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		487DDF811C04BDE100E4A017 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		487DDF841C04BDE100E4A017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		487DDF861C04BDE100E4A017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		487DDF891C04BDE100E4A017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		487DDF8B1C04BDE100E4A017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		487DDF901C04BDE100E4A017 /* bonkNLearnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bonkNLearnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		487DDF901C04BDE100E4A017 /* BonkNLearn.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BonkNLearn.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		487DDF941C04BDE100E4A017 /* bonkNLearnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bonkNLearnTests.swift; sourceTree = "<group>"; };
 		487DDF961C04BDE100E4A017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		487DDF9B1C04BDE100E4A017 /* bonkNLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bonkNLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		487DDF9B1C04BDE100E4A017 /* BonkNLearn.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BonkNLearn.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		487DDF9F1C04BDE200E4A017 /* bonkNLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bonkNLearnUITests.swift; sourceTree = "<group>"; };
 		487DDFA11C04BDE200E4A017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B4598D91C08FBC7004DD11D /* FourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +150,25 @@
 		9B87B1201C07B0E200C76919 /* Eight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Eight.mp3; sourceTree = "<group>"; };
 		9B87B1221C07B0F600C76919 /* Nine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nine.mp3; sourceTree = "<group>"; };
 		9B87B1241C07B10900C76919 /* Ten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ten.mp3; sourceTree = "<group>"; };
+		9BA10B861C0E8200005A569A /* BonknLearn CHIPMUNK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn CHIPMUNK.png"; sourceTree = "<group>"; };
+		9BA10B881C0E8212005A569A /* BonknLearn 123s Languages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn 123s Languages.png"; sourceTree = "<group>"; };
+		9BA10B8A1C0E8253005A569A /* BonknLearn Directions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn Directions.png"; sourceTree = "<group>"; };
+		9BA10B8C1C0E8276005A569A /* BonknLearn INFANT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn INFANT.png"; sourceTree = "<group>"; };
+		9BA10B8E1C0E8280005A569A /* BonknLearn PIG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn PIG.png"; sourceTree = "<group>"; };
+		9BA10B901C0E8291005A569A /* BonknLearn TODDLER.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn TODDLER.png"; sourceTree = "<group>"; };
+		9BA10B921C0E82A3005A569A /* BonknLearn ONE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn ONE.png"; sourceTree = "<group>"; };
+		9BA10B941C0E82AF005A569A /* BonknLearn TWO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn TWO.png"; sourceTree = "<group>"; };
+		9BA10B961C0E82B6005A569A /* BonknLearn THREE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn THREE.png"; sourceTree = "<group>"; };
+		9BA10B981C0E82C1005A569A /* BonknLearn FOUR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn FOUR.png"; sourceTree = "<group>"; };
+		9BA10B9A1C0E82C7005A569A /* BonknLearn FIVE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn FIVE.png"; sourceTree = "<group>"; };
+		9BA10B9C1C0E82D0005A569A /* BonknLearn SIX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn SIX.png"; sourceTree = "<group>"; };
+		9BA10B9E1C0E82D6005A569A /* BonknLearn SEVEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn SEVEN.png"; sourceTree = "<group>"; };
+		9BA10BA01C0E82E3005A569A /* BonknLearn EIGHT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn EIGHT.png"; sourceTree = "<group>"; };
+		9BA10BA21C0E82F1005A569A /* BonknLearn NINE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn NINE.png"; sourceTree = "<group>"; };
+		9BA10BA41C0E82F7005A569A /* BonknLearn TEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn TEN.png"; sourceTree = "<group>"; };
+		9BA10BA61C0E86DA005A569A /* BonknLearn AGES.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn AGES.png"; sourceTree = "<group>"; };
+		9BA10BA81C0E8FBB005A569A /* Chipmunk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Chipmunk.mp3; sourceTree = "<group>"; };
+		9BA10BAA1C0E8FC3005A569A /* pig.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pig.mp3; sourceTree = "<group>"; };
 		9BDBD40A1C07739100BB1021 /* UnoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnoViewController.swift; sourceTree = "<group>"; };
 		9BDBD40C1C07749A00BB1021 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9BDBD40E1C0774A000BB1021 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -181,9 +219,9 @@
 		487DDF7D1C04BDE100E4A017 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				487DDF7C1C04BDE100E4A017 /* bonkNLearn.app */,
-				487DDF901C04BDE100E4A017 /* bonkNLearnTests.xctest */,
-				487DDF9B1C04BDE100E4A017 /* bonkNLearnUITests.xctest */,
+				487DDF7C1C04BDE100E4A017 /* BonkNLearn.temp_caseinsensitive_rename.app */,
+				487DDF901C04BDE100E4A017 /* BonkNLearn.temp_caseinsensitive_rename.xctest */,
+				487DDF9B1C04BDE100E4A017 /* BonkNLearn.temp_caseinsensitive_rename.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,6 +229,7 @@
 		487DDF7E1C04BDE100E4A017 /* bonkNLearn */ = {
 			isa = PBXGroup;
 			children = (
+				9BA10B851C0E81C9005A569A /* views */,
 				9B4598E71C08FF58004DD11D /* Animals */,
 				9B87B10D1C07AFA300C76919 /* EnglishSounds */,
 				9B87B1061C07AF5F00C76919 /* English */,
@@ -227,6 +266,8 @@
 		9B4598E71C08FF58004DD11D /* Animals */ = {
 			isa = PBXGroup;
 			children = (
+				9BA10BAA1C0E8FC3005A569A /* pig.mp3 */,
+				9BA10BA81C0E8FBB005A569A /* Chipmunk.mp3 */,
 				9B4598E81C08FF7A004DD11D /* ElephantViewController.swift */,
 				9B4598EA1C08FF89004DD11D /* DogViewController.swift */,
 				9B4598EC1C09015E004DD11D /* AnimalGoViewController.swift */,
@@ -266,6 +307,30 @@
 				9B87B1121C07B02F00C76919 /* One.mp3 */,
 			);
 			name = EnglishSounds;
+			sourceTree = "<group>";
+		};
+		9BA10B851C0E81C9005A569A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9BA10BA61C0E86DA005A569A /* BonknLearn AGES.png */,
+				9BA10BA41C0E82F7005A569A /* BonknLearn TEN.png */,
+				9BA10BA21C0E82F1005A569A /* BonknLearn NINE.png */,
+				9BA10BA01C0E82E3005A569A /* BonknLearn EIGHT.png */,
+				9BA10B9E1C0E82D6005A569A /* BonknLearn SEVEN.png */,
+				9BA10B9C1C0E82D0005A569A /* BonknLearn SIX.png */,
+				9BA10B9A1C0E82C7005A569A /* BonknLearn FIVE.png */,
+				9BA10B981C0E82C1005A569A /* BonknLearn FOUR.png */,
+				9BA10B961C0E82B6005A569A /* BonknLearn THREE.png */,
+				9BA10B941C0E82AF005A569A /* BonknLearn TWO.png */,
+				9BA10B921C0E82A3005A569A /* BonknLearn ONE.png */,
+				9BA10B901C0E8291005A569A /* BonknLearn TODDLER.png */,
+				9BA10B8E1C0E8280005A569A /* BonknLearn PIG.png */,
+				9BA10B8C1C0E8276005A569A /* BonknLearn INFANT.png */,
+				9BA10B8A1C0E8253005A569A /* BonknLearn Directions.png */,
+				9BA10B881C0E8212005A569A /* BonknLearn 123s Languages.png */,
+				9BA10B861C0E8200005A569A /* BonknLearn CHIPMUNK.png */,
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 		9BDBD4141C077BD800BB1021 /* SpanishSounds */ = {
@@ -319,7 +384,7 @@
 			);
 			name = bonkNLearn;
 			productName = bonkNLearn;
-			productReference = 487DDF7C1C04BDE100E4A017 /* bonkNLearn.app */;
+			productReference = 487DDF7C1C04BDE100E4A017 /* BonkNLearn.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 		487DDF8F1C04BDE100E4A017 /* bonkNLearnTests */ = {
@@ -337,7 +402,7 @@
 			);
 			name = bonkNLearnTests;
 			productName = bonkNLearnTests;
-			productReference = 487DDF901C04BDE100E4A017 /* bonkNLearnTests.xctest */;
+			productReference = 487DDF901C04BDE100E4A017 /* BonkNLearn.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		487DDF9A1C04BDE100E4A017 /* bonkNLearnUITests */ = {
@@ -355,7 +420,7 @@
 			);
 			name = bonkNLearnUITests;
 			productName = bonkNLearnUITests;
-			productReference = 487DDF9B1C04BDE100E4A017 /* bonkNLearnUITests.xctest */;
+			productReference = 487DDF9B1C04BDE100E4A017 /* BonkNLearn.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -381,7 +446,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 487DDF771C04BDE100E4A017 /* Build configuration list for PBXProject "bonkNLearn" */;
+			buildConfigurationList = 487DDF771C04BDE100E4A017 /* Build configuration list for PBXProject "BonkNLearn" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -408,27 +473,46 @@
 			files = (
 				9B87B1231C07B0F600C76919 /* Nine.mp3 in Resources */,
 				9B87B0F91C0791F300C76919 /* Diez.mp3 in Resources */,
+				9BA10BA91C0E8FBB005A569A /* Chipmunk.mp3 in Resources */,
 				9B87B0F11C0791BC00C76919 /* Seis.mp3 in Resources */,
+				9BA10B911C0E8291005A569A /* BonknLearn TODDLER.png in Resources */,
 				9B87B11F1C07B0D000C76919 /* Seven.mp3 in Resources */,
+				9BA10BA51C0E82F7005A569A /* BonknLearn TEN.png in Resources */,
 				9B87B1131C07B02F00C76919 /* One.mp3 in Resources */,
 				9B87B0E91C07902900C76919 /* Tres.mp3 in Resources */,
+				9BA10BAB1C0E8FC3005A569A /* pig.mp3 in Resources */,
 				9B87B0ED1C07919C00C76919 /* Cuatro.mp3 in Resources */,
+				9BA10B891C0E8212005A569A /* BonknLearn 123s Languages.png in Resources */,
+				9BA10B971C0E82B6005A569A /* BonknLearn THREE.png in Resources */,
+				9BA10B9B1C0E82C7005A569A /* BonknLearn FIVE.png in Resources */,
+				9BA10B8D1C0E8276005A569A /* BonknLearn INFANT.png in Resources */,
 				487DDF8A1C04BDE100E4A017 /* LaunchScreen.storyboard in Resources */,
+				9BA10B931C0E82A3005A569A /* BonknLearn ONE.png in Resources */,
+				9BA10B9F1C0E82D6005A569A /* BonknLearn SEVEN.png in Resources */,
 				9B87B11B1C07B0A900C76919 /* Five.mp3 in Resources */,
+				9BA10BA11C0E82E3005A569A /* BonknLearn EIGHT.png in Resources */,
 				9B87B1171C07B07400C76919 /* Three.mp3 in Resources */,
+				9BA10B991C0E82C1005A569A /* BonknLearn FOUR.png in Resources */,
 				9B87B1211C07B0E200C76919 /* Eight.mp3 in Resources */,
+				9BA10B951C0E82AF005A569A /* BonknLearn TWO.png in Resources */,
 				9B87B1151C07B05300C76919 /* Two.mp3 in Resources */,
 				9B87B0EF1C0791AF00C76919 /* Cinco.mp3 in Resources */,
+				9BA10BA71C0E86DA005A569A /* BonknLearn AGES.png in Resources */,
 				9B87B0F51C0791D800C76919 /* Ocho.mp3 in Resources */,
 				487DDF871C04BDE100E4A017 /* Assets.xcassets in Resources */,
 				9BDBD4161C077BF400BB1021 /* Dos.mp3 in Resources */,
 				487DDF851C04BDE100E4A017 /* Main.storyboard in Resources */,
+				9BA10B8B1C0E8253005A569A /* BonknLearn Directions.png in Resources */,
+				9BA10BA31C0E82F1005A569A /* BonknLearn NINE.png in Resources */,
+				9BA10B9D1C0E82D0005A569A /* BonknLearn SIX.png in Resources */,
 				9B87B1191C07B09100C76919 /* Four.mp3 in Resources */,
 				9BDBD4131C077BC400BB1021 /* Uno.mp3 in Resources */,
+				9BA10B871C0E8200005A569A /* BonknLearn CHIPMUNK.png in Resources */,
 				9B87B0F71C0791E800C76919 /* Nueve.mp3 in Resources */,
 				9B87B1251C07B10900C76919 /* Ten.mp3 in Resources */,
 				9B87B11D1C07B0BE00C76919 /* Six.mp3 in Resources */,
 				9B87B0F31C0791C900C76919 /* Siete.mp3 in Resources */,
+				9BA10B8F1C0E8280005A569A /* BonknLearn PIG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,8 +705,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = bonkNLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dynepic.bonkNLearn;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dynepic.BonkNLearn;
+				PRODUCT_NAME = BonkNLearn.temp_caseinsensitive_rename;
 			};
 			name = Debug;
 		};
@@ -632,8 +716,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = bonkNLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dynepic.bonkNLearn;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dynepic.BonkNLearn;
+				PRODUCT_NAME = BonkNLearn.temp_caseinsensitive_rename;
 			};
 			name = Release;
 		};
@@ -644,8 +728,8 @@
 				INFOPLIST_FILE = bonkNLearnTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dynepic.bonkNLearnTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bonkNLearn.app/bonkNLearn";
+				PRODUCT_NAME = BonkNLearn.temp_caseinsensitive_rename;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BonkNLearn.temp_caseinsensitive_rename.app/BonkNLearn.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -656,8 +740,8 @@
 				INFOPLIST_FILE = bonkNLearnTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dynepic.bonkNLearnTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bonkNLearn.app/bonkNLearn";
+				PRODUCT_NAME = BonkNLearn.temp_caseinsensitive_rename;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BonkNLearn.temp_caseinsensitive_rename.app/BonkNLearn.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
@@ -667,7 +751,7 @@
 				INFOPLIST_FILE = bonkNLearnUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dynepic.bonkNLearnUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BonkNLearn.temp_caseinsensitive_rename;
 				TEST_TARGET_NAME = bonkNLearn;
 				USES_XCTRUNNER = YES;
 			};
@@ -679,7 +763,7 @@
 				INFOPLIST_FILE = bonkNLearnUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dynepic.bonkNLearnUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BonkNLearn.temp_caseinsensitive_rename;
 				TEST_TARGET_NAME = bonkNLearn;
 				USES_XCTRUNNER = YES;
 			};
@@ -688,7 +772,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		487DDF771C04BDE100E4A017 /* Build configuration list for PBXProject "bonkNLearn" */ = {
+		487DDF771C04BDE100E4A017 /* Build configuration list for PBXProject "BonkNLearn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				487DDFA21C04BDE200E4A017 /* Debug */,
