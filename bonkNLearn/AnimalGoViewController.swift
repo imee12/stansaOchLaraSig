@@ -27,8 +27,8 @@ class AnimalGoViewController: UIViewController {
         
         
         super.viewDidLoad()
-        elephant = self.setupAudioPlayerWithFile("One", type:"mp3")
-        dog = self.setupAudioPlayerWithFile("Two", type:"mp3")
+        elephant = self.setupAudioPlayerWithFile("Chipmunk", type:"mp3")
+        dog = self.setupAudioPlayerWithFile("pig", type:"mp3")
         
 
 
@@ -172,7 +172,7 @@ class AnimalGoViewController: UIViewController {
                 dog.play()
                 
                 
-                delay(1){
+                delay(2){
                     self.dog.stop()
                 }
                 

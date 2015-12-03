@@ -9,7 +9,7 @@
         <!--Age View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AgeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AgeViewController" id="BYZ-38-t0r" customClass="AgeViewController" customModule="BonkNLearn_temp_caseinsensitive_rename" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,23 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVp-fC-r7Z">
-                                <rect key="frame" x="26" y="172" width="534" height="126"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="1Pl-wR-Zpq" kind="show" identifier="toddToActivities" id="YaS-KL-GVC"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn AGES.png" translatesAutoresizingMaskIntoConstraints="NO" id="iSV-SD-Qgb">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6p4-IT-2g8">
                                 <rect key="frame" x="31" y="306" width="529" height="122"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="diB-ul-u0o" kind="show" identifier="preToActivities" id="w9W-i9-2i3"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn AGES.png" translatesAutoresizingMaskIntoConstraints="NO" id="iSV-SD-Qgb">
-                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVp-fC-r7Z">
+                                <rect key="frame" x="26" y="172" width="534" height="126"/>
+                                <connections>
+                                    <segue destination="1Pl-wR-Zpq" kind="show" identifier="toddToActivities" id="YaS-KL-GVC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -48,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="414" y="325"/>
+            <point key="canvasLocation" x="2268" y="1114"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vae-MP-Pk0">
@@ -62,16 +60,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn TODDLER.png" translatesAutoresizingMaskIntoConstraints="NO" id="fxv-Hj-zgJ">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7R-0B-nHB">
                                 <rect key="frame" x="0.0" y="305" width="593" height="101"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="noe-Y3-Htb" kind="show" identifier="actToNumbers" id="wDt-9G-iDR"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn TODDLER.png" translatesAutoresizingMaskIntoConstraints="NO" id="fxv-Hj-zgJ">
-                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -98,23 +95,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn 123s Languages.png" translatesAutoresizingMaskIntoConstraints="NO" id="mKo-aT-k17">
+                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVV-3g-OKE">
                                 <rect key="frame" x="20" y="137" width="568" height="117"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="wQT-N5-vm5" kind="show" identifier="engToGo" id="eW2-Mt-rl5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QK-0L-q5C">
                                 <rect key="frame" x="27" y="262" width="553" height="94"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="GMW-Rs-Ja9" kind="show" identifier="spanToGo" id="wC3-8i-qpG"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn 123s Languages.png" translatesAutoresizingMaskIntoConstraints="NO" id="mKo-aT-k17">
-                                <rect key="frame" x="140" y="0.0" width="320" height="600"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -127,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMs-8O-HLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2007" y="513"/>
+            <point key="canvasLocation" x="2085" y="267"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="axP-eO-sJc">
@@ -146,7 +141,6 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwm-Nd-zFA">
                                 <rect key="frame" x="20" y="434" width="568" height="146"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="Wr9-jE-gae" kind="show" identifier="goToUno" id="ESf-kP-9U5"/>
                                 </connections>
@@ -180,6 +174,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn ONE.png" translatesAutoresizingMaskIntoConstraints="NO" id="CeA-lz-6LO">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECm-KE-BSp">
+                                <rect key="frame" x="34" y="413" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="USo-dG-XoO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -195,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LT3-i4-F1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3463" y="223"/>
+            <point key="canvasLocation" x="3599" y="540"/>
         </scene>
         <!--Dos View Controller-->
         <scene sceneID="WH1-Vl-wtA">
@@ -212,6 +212,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn TWO.png" translatesAutoresizingMaskIntoConstraints="NO" id="507-oH-mB8">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOc-r9-Vz8">
+                                <rect key="frame" x="41" y="396" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="EYz-0R-ORH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -244,6 +250,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn THREE.png" translatesAutoresizingMaskIntoConstraints="NO" id="60b-S5-vsY">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgp-pX-Fg5">
+                                <rect key="frame" x="20" y="391" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Gxd-Nh-Ik3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -276,6 +288,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn FOUR.png" translatesAutoresizingMaskIntoConstraints="NO" id="VdA-7m-urS">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkX-eu-89d">
+                                <rect key="frame" x="34" y="391" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="8g1-Al-5Kc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -308,6 +326,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn FIVE.png" translatesAutoresizingMaskIntoConstraints="NO" id="xK5-41-snR">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIs-N6-bJn">
+                                <rect key="frame" x="20" y="394" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="43Q-Cp-YTh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -340,6 +364,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn SIX.png" translatesAutoresizingMaskIntoConstraints="NO" id="CFf-Km-zh2">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DL-De-xfG">
+                                <rect key="frame" x="58" y="388" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="jjT-hm-zfN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -374,7 +404,6 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufc-Jp-x1E">
                                 <rect key="frame" x="52" y="431" width="487" height="149"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="AsL-nu-Fcx" kind="show" identifier="goToOne" id="QAP-Da-Wdu"/>
                                 </connections>
@@ -408,6 +437,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn TWO.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ivs-6f-xz4">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQ4-AA-jhV">
+                                <rect key="frame" x="28" y="401" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="crf-0g-Fwb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -440,6 +475,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn THREE.png" translatesAutoresizingMaskIntoConstraints="NO" id="iDh-Cn-Pj6">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gQ-x2-mJl">
+                                <rect key="frame" x="34" y="401" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="iM9-gu-Hok"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -472,6 +513,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn FOUR.png" translatesAutoresizingMaskIntoConstraints="NO" id="l8g-s7-eIi">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qft-7r-Pdi">
+                                <rect key="frame" x="34" y="401" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="sv1-mk-kbV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -504,6 +551,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn FIVE.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xt3-vY-ZKj">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVX-39-zk5">
+                                <rect key="frame" x="34" y="401" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="lVi-rV-Fp4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -536,6 +589,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn SIX.png" translatesAutoresizingMaskIntoConstraints="NO" id="p5c-BO-onK">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMU-np-KM9">
+                                <rect key="frame" x="34" y="392" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="qvV-PC-532"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -568,6 +627,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn SEVEN.png" translatesAutoresizingMaskIntoConstraints="NO" id="HUx-lV-Mwn">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVr-ue-i7V">
+                                <rect key="frame" x="34" y="392" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="JdJ-pH-LcL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -600,6 +665,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn SEVEN.png" translatesAutoresizingMaskIntoConstraints="NO" id="14T-S2-DEV">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nx1-un-Wwk">
+                                <rect key="frame" x="34" y="393" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="GLC-iu-uCv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -632,6 +703,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn EIGHT.png" translatesAutoresizingMaskIntoConstraints="NO" id="WrE-GW-Kcr">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgZ-Pv-xWW">
+                                <rect key="frame" x="34" y="401" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="AdT-bu-pSe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -664,6 +741,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn NINE.png" translatesAutoresizingMaskIntoConstraints="NO" id="tZ1-0E-6FZ">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C6-9X-X2V">
+                                <rect key="frame" x="34" y="394" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ur1-Gd-phG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -698,7 +781,6 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENv-Fu-lYE">
                                 <rect key="frame" x="53" y="413" width="527" height="167"/>
-                                <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -715,7 +797,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Niq-qz-46K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2787" y="920"/>
+            <point key="canvasLocation" x="3202" y="649"/>
         </scene>
         <!--Eight View Controller-->
         <scene sceneID="Cy9-pa-V4D">
@@ -732,6 +814,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn EIGHT.png" translatesAutoresizingMaskIntoConstraints="NO" id="rNZ-Np-lbp">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SL-uv-X26">
+                                <rect key="frame" x="34" y="392" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="2FQ-Yd-bwj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -764,6 +852,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn NINE.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xjm-y2-lhL">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf7-Ts-CRq">
+                                <rect key="frame" x="34" y="406" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="51N-m4-8gA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -796,6 +890,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn TEN.png" translatesAutoresizingMaskIntoConstraints="NO" id="tgB-mr-BOJ">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lF-kN-iVt">
+                                <rect key="frame" x="34" y="395" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="kQL-7A-tAY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -827,7 +927,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHB-ef-Bj4">
                                 <rect key="frame" x="0.0" y="301" width="290" height="91"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="Y35-Gc-X0f" kind="show" identifier="actToAnimals" id="cf8-Ws-ekp"/>
                                 </connections>
@@ -866,7 +965,6 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0K-OW-fJd">
                                 <rect key="frame" x="20" y="432" width="569" height="155"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="goAnim_click:" destination="Y35-Gc-X0f" eventType="touchUpInside" id="DKE-ZE-v1C"/>
                                 </connections>
@@ -905,6 +1003,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn CHIPMUNK.png" translatesAutoresizingMaskIntoConstraints="NO" id="QG9-Za-RMX">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3W-f7-YUU">
+                                <rect key="frame" x="63" y="417" width="493" height="131"/>
+                                <connections>
+                                    <action selector="restart_btn:" destination="yMj-7a-eVf" eventType="touchUpInside" id="cZB-M9-pgD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -915,12 +1019,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="restart_btn" destination="k3W-f7-YUU" id="R6R-PG-xpa"/>
                         <segue destination="eLC-xk-wOy" kind="show" id="Hq6-yK-vJp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J6E-BD-Tug" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2558" y="-530"/>
+            <point key="canvasLocation" x="2676" y="-338"/>
         </scene>
         <!--Dog View Controller-->
         <scene sceneID="2xu-AF-63i">
@@ -937,6 +1042,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn PIG.png" translatesAutoresizingMaskIntoConstraints="NO" id="iwT-Bj-KEi">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSD-Hg-8M9">
+                                <rect key="frame" x="60" y="418" width="493" height="131"/>
+                                <connections>
+                                    <action selector="restart_btn:" destination="eLC-xk-wOy" eventType="touchUpInside" id="Dje-Dr-sXC"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="tjl-2k-PRP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -947,12 +1059,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="restart_btn" destination="VSD-Hg-8M9" id="MQU-2U-KvA"/>
                         <segue destination="yMj-7a-eVf" kind="show" id="22H-jK-qew"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9UG-FL-e6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3265" y="-541"/>
+            <point key="canvasLocation" x="3268" y="-387"/>
         </scene>
         <!--One View Controller-->
         <scene sceneID="ibf-BO-bRz">
@@ -969,6 +1082,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonknLearn ONE.png" translatesAutoresizingMaskIntoConstraints="NO" id="mQh-4C-SOr">
                                 <rect key="frame" x="140" y="0.0" width="320" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnL-va-GUy">
+                                <rect key="frame" x="34" y="391" width="532" height="179"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="wVE-xI-tCZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1007,8 +1126,8 @@
         <image name="BonknLearn TWO.png" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0AX-KS-DjB"/>
-        <segue reference="UmE-lG-O2I"/>
-        <segue reference="vpZ-Xg-px3"/>
+        <segue reference="Wdy-o0-7lh"/>
+        <segue reference="22H-jK-qew"/>
+        <segue reference="Hq6-yK-vJp"/>
     </inferredMetricsTieBreakers>
 </document>

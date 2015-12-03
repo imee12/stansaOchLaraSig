@@ -14,16 +14,19 @@ import AVFoundation
 class ElephantViewController: UIViewController {
     
     
+    @IBOutlet weak var restart_btn: UIButton!
+    
     var elephant = AVAudioPlayer()
     var dog = AVAudioPlayer()
     var motionManager = CMMotionManager()
+    var restart = false
     
     
     
     override func viewDidLoad() {
         motionManager.accelerometerUpdateInterval = 0.2
-        elephant = self.setupAudioPlayerWithFile("One", type:"mp3")
-        dog = self.setupAudioPlayerWithFile("Two", type:"mp3")
+        elephant = self.setupAudioPlayerWithFile("Chipmunk", type:"mp3")
+        dog = self.setupAudioPlayerWithFile("pig", type:"mp3")
         
         
         delay(3) {
@@ -49,9 +52,52 @@ class ElephantViewController: UIViewController {
     
     }
     
+    @IBAction func restart_btn(sender: AnyObject) {
+        print("restart hit")
+        stopAccelerometerUpdates()
+        
+        restart = true
+        
+        self.elephant.stop()
+        
+        let agevc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("AgeViewController") as UIViewController
+        let elephantvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ElephantViewController") as UIViewController
+        
+        self.presentViewController(agevc, animated: false, completion: nil)
+        
+        
+        
+        // self.performSegueWithIdentifier("goToMenu", sender: self)
+        elephantvc.dismissViewControllerAnimated(false, completion: nil)
+        
+        
+        
+        //        let agevc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("AgeViewController") as UIViewController
+        //        let elephantvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ElephantViewController") as UIViewController
+        //
+        //        // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
+        //        let appDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
+        //        appDelegate.window?.rootViewController = agevc
+        //
+        //        let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+        //        dispatch_async(dispatch_get_global_queue(priority, 0)) {
+        //            // do some task
+        //            dispatch_async(dispatch_get_main_queue()) {
+        //                self.presentViewController(agevc, animated: false, completion: nil)
+        //
+        //                elephantvc.dismissViewControllerAnimated(false, completion: nil)
+        //            }
+        //        }
+        //
+        
+        
+        
+    }
+
+    
     
     func restartAccelUpdates () {
-        print("restart here")
+        print("restart here from ele")
         motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.currentQueue()!,
             withHandler: { (accelerometerData, error) -> Void in self.outputAccelerationData(accelerometerData!.acceleration)
                 if (error != nil) {
@@ -92,7 +138,12 @@ class ElephantViewController: UIViewController {
     
     func outputAccelerationData(acceleration: CMAcceleration) {
         // if acc.x or acc.y or acc.z <  +/- 0.4
-  
+        
+        if( restart == true) {
+            stopAccelerometerUpdates()
+        } else
+        
+        
         if (acceleration.z < -0.40 || acceleration.z < 0.40  || acceleration.x < -0.40 || acceleration.x < 0.40  || acceleration.y < -0.40  || acceleration.y < 0.40) {
             print("Z is here.")
             
@@ -128,7 +179,7 @@ class ElephantViewController: UIViewController {
                 
                 
                 elephant.play()
-                delay(1){
+                delay(2){
                     self.elephant.stop()
                 }
                 
@@ -188,7 +239,7 @@ class ElephantViewController: UIViewController {
                 dog.play()
                 
                 
-                delay(1){
+                delay(2){
                     self.dog.stop()
                 }
                 
@@ -212,6 +263,8 @@ class ElephantViewController: UIViewController {
         print("stop accel updates")
         
         motionManager.stopAccelerometerUpdates()
+        
+    
         
         
         //most likely not need this delay keep for now

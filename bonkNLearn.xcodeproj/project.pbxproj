@@ -72,6 +72,8 @@
 		9BA10BA71C0E86DA005A569A /* BonknLearn AGES.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10BA61C0E86DA005A569A /* BonknLearn AGES.png */; };
 		9BA10BA91C0E8FBB005A569A /* Chipmunk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10BA81C0E8FBB005A569A /* Chipmunk.mp3 */; };
 		9BA10BAB1C0E8FC3005A569A /* pig.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9BA10BAA1C0E8FC3005A569A /* pig.mp3 */; };
+		9BD5C4141C0FEB4D00C19350 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD5C4131C0FEB4D00C19350 /* AgeViewController.swift */; };
+		9BD5C4161C1009EF00C19350 /* BonknLearn Blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BD5C4151C1009EF00C19350 /* BonknLearn Blank.png */; };
 		9BDBD40B1C07739100BB1021 /* UnoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBD40A1C07739100BB1021 /* UnoViewController.swift */; };
 		9BDBD40D1C07749A00BB1021 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDBD40C1C07749A00BB1021 /* AVFoundation.framework */; };
 		9BDBD40F1C0774A000BB1021 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDBD40E1C0774A000BB1021 /* CoreMotion.framework */; };
@@ -169,6 +171,8 @@
 		9BA10BA61C0E86DA005A569A /* BonknLearn AGES.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn AGES.png"; sourceTree = "<group>"; };
 		9BA10BA81C0E8FBB005A569A /* Chipmunk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Chipmunk.mp3; sourceTree = "<group>"; };
 		9BA10BAA1C0E8FC3005A569A /* pig.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pig.mp3; sourceTree = "<group>"; };
+		9BD5C4131C0FEB4D00C19350 /* AgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
+		9BD5C4151C1009EF00C19350 /* BonknLearn Blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BonknLearn Blank.png"; sourceTree = "<group>"; };
 		9BDBD40A1C07739100BB1021 /* UnoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnoViewController.swift; sourceTree = "<group>"; };
 		9BDBD40C1C07749A00BB1021 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9BDBD40E1C0774A000BB1021 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -271,6 +275,7 @@
 				9B4598E81C08FF7A004DD11D /* ElephantViewController.swift */,
 				9B4598EA1C08FF89004DD11D /* DogViewController.swift */,
 				9B4598EC1C09015E004DD11D /* AnimalGoViewController.swift */,
+				9BD5C4131C0FEB4D00C19350 /* AgeViewController.swift */,
 			);
 			name = Animals;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 		9BA10B851C0E81C9005A569A /* views */ = {
 			isa = PBXGroup;
 			children = (
+				9BD5C4151C1009EF00C19350 /* BonknLearn Blank.png */,
 				9BA10BA61C0E86DA005A569A /* BonknLearn AGES.png */,
 				9BA10BA41C0E82F7005A569A /* BonknLearn TEN.png */,
 				9BA10BA21C0E82F1005A569A /* BonknLearn NINE.png */,
@@ -370,9 +376,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		487DDF7B1C04BDE100E4A017 /* bonkNLearn */ = {
+		487DDF7B1C04BDE100E4A017 /* BonkNLearn */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 487DDFA41C04BDE200E4A017 /* Build configuration list for PBXNativeTarget "bonkNLearn" */;
+			buildConfigurationList = 487DDFA41C04BDE200E4A017 /* Build configuration list for PBXNativeTarget "BonkNLearn" */;
 			buildPhases = (
 				487DDF781C04BDE100E4A017 /* Sources */,
 				487DDF791C04BDE100E4A017 /* Frameworks */,
@@ -382,7 +388,7 @@
 			);
 			dependencies = (
 			);
-			name = bonkNLearn;
+			name = BonkNLearn;
 			productName = bonkNLearn;
 			productReference = 487DDF7C1C04BDE100E4A017 /* BonkNLearn.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
@@ -435,6 +441,7 @@
 				TargetAttributes = {
 					487DDF7B1C04BDE100E4A017 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = B3J9X5E9DL;
 					};
 					487DDF8F1C04BDE100E4A017 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -459,7 +466,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				487DDF7B1C04BDE100E4A017 /* bonkNLearn */,
+				487DDF7B1C04BDE100E4A017 /* BonkNLearn */,
 				487DDF8F1C04BDE100E4A017 /* bonkNLearnTests */,
 				487DDF9A1C04BDE100E4A017 /* bonkNLearnUITests */,
 			);
@@ -474,6 +481,7 @@
 				9B87B1231C07B0F600C76919 /* Nine.mp3 in Resources */,
 				9B87B0F91C0791F300C76919 /* Diez.mp3 in Resources */,
 				9BA10BA91C0E8FBB005A569A /* Chipmunk.mp3 in Resources */,
+				9BD5C4161C1009EF00C19350 /* BonknLearn Blank.png in Resources */,
 				9B87B0F11C0791BC00C76919 /* Seis.mp3 in Resources */,
 				9BA10B911C0E8291005A569A /* BonknLearn TODDLER.png in Resources */,
 				9B87B11F1C07B0D000C76919 /* Seven.mp3 in Resources */,
@@ -553,6 +561,7 @@
 				9BDBD4111C07782400BB1021 /* DosViewController.swift in Sources */,
 				9B4598DE1C08FBDB004DD11D /* SixViewController.swift in Sources */,
 				9B87B0FD1C0798E600C76919 /* SeisViewController.swift in Sources */,
+				9BD5C4141C0FEB4D00C19350 /* AgeViewController.swift in Sources */,
 				9B87B10C1C07AF8B00C76919 /* ThreeViewController.swift in Sources */,
 				9B87B0FF1C0798F600C76919 /* SieteViewController.swift in Sources */,
 				9B4598E91C08FF7A004DD11D /* ElephantViewController.swift in Sources */,
@@ -586,12 +595,12 @@
 /* Begin PBXTargetDependency section */
 		487DDF921C04BDE100E4A017 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 487DDF7B1C04BDE100E4A017 /* bonkNLearn */;
+			target = 487DDF7B1C04BDE100E4A017 /* BonkNLearn */;
 			targetProxy = 487DDF911C04BDE100E4A017 /* PBXContainerItemProxy */;
 		};
 		487DDF9D1C04BDE100E4A017 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 487DDF7B1C04BDE100E4A017 /* bonkNLearn */;
+			target = 487DDF7B1C04BDE100E4A017 /* BonkNLearn */;
 			targetProxy = 487DDF9C1C04BDE100E4A017 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -703,6 +712,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = bonkNLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dynepic.BonkNLearn;
@@ -714,6 +724,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = bonkNLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dynepic.BonkNLearn;
@@ -781,7 +792,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		487DDFA41C04BDE200E4A017 /* Build configuration list for PBXNativeTarget "bonkNLearn" */ = {
+		487DDFA41C04BDE200E4A017 /* Build configuration list for PBXNativeTarget "BonkNLearn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				487DDFA51C04BDE200E4A017 /* Debug */,
